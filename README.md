@@ -16,6 +16,8 @@ You can send commands to Items, get the State of an Item etc.
 Install via .lplug4 Plugin File or via VS Code.
 
 create a openhab.json like this 
+
+```json
 {
     "user": "openHAB-username",
     "password": "openHAB-password",
@@ -51,6 +53,7 @@ create a openhab.json like this
      }
     ]
  }
+```
 
 replace the fields with your values.
 
