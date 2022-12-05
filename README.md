@@ -8,12 +8,14 @@
 - [7. Sponsor me!](#7-how-to-sponsor)
 
 # 2. What is this Plugin?
-This Loupedeck Plugin allows you to control your home with openHAB (https://openhab.org)
-You can send commands to Items, get the State of an Item etc.
+This Loupedeck Plugin allows you to control your openHAB System with a Loupedeck (https://openhab.org)
+Right now it´s macOS only.
+You can pick Items out of a list - send commands to Items - get the State of an Item etc.
+It is possible to use the touch buttons - dials - and show the state of an Item on the Main Screen or the Dial Screen.
 
 
 # 3. Setup
-Install via .lplug4 Plugin File or via VS Code.
+Install via .lplug4 Plugin File or directly via VS Code.
 
 create a openhab.json like this 
 
@@ -63,18 +65,18 @@ place the file in `%userprofile%\.local/share/Loupedeck/Plugins/OpenHAB/` as `op
 # 4. How to use it?
 
 1. Install the Plugin
-2. Create a config 
+2. Create a openhab.json config with your Items
 3. Add Actions to Loupedeck
-4. Have fun controlling your home
+4. Have fun controlling your openHAB System
 
 
 
 # 5. Support / Feedback
-You found a bug? You have a feature request? I would love to hear about it [here](https://github.com/bangertech) or click on the "Issues" tab here on the GitHub repositorie!
+Any bugs? Feature request? Message me [here](https://github.com/bangertech) or click on the "Issues" tab here on the GitHub repository!
 
 # 6. How to contribute?
 
-Just fork the repository and create PR's.
+Fork the repository and create PR's.
 
 # 7 How to sponsor?
 
