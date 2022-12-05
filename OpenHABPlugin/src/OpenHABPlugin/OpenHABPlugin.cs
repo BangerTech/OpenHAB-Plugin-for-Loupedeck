@@ -12,9 +12,9 @@ namespace Loupedeck.OpenHABPlugin
 
         // Gets a value indicating whether this is an API-only plugin.
         public override Boolean HasNoApplication => true;
+        internal static readonly String DEFAULT_PATH = Path.Combine("Loupedeck", "Plugins", "OpenHAB");
 
-        internal static readonly String DEFAULT_PATH = Path.Combine(".local", "share", "Loupedeck", "Plugins", "OpenHAB");
-        internal static String UserProfilePath => Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
+        internal static String LocalApplicationDataPath => Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
 
         public String ConfigFile;
 
@@ -52,11 +52,11 @@ namespace Loupedeck.OpenHABPlugin
         private void Init()
         {
             
-            if (!Directory.Exists(Path.Combine(UserProfilePath, DEFAULT_PATH)))
+            if (!Directory.Exists(Path.Combine(LocalApplicationDataPath, DEFAULT_PATH)))
             {
-                Directory.CreateDirectory(Path.Combine(UserProfilePath, DEFAULT_PATH));
+                Directory.CreateDirectory(Path.Combine(LocalApplicationDataPath, DEFAULT_PATH));
             }
-            var fp = Path.Combine(UserProfilePath, DEFAULT_PATH);
-            this.ConfigFile = fp + "\\openhab.json";        }
+            var fp = Path.Combine(LocalApplicationDataPath, DEFAULT_PATH);
+            this.ConfigFile = Path.Combine(fp, "openhab.json");        }
     }
 }
