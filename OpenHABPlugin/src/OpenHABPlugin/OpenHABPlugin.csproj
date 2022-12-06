@@ -84,7 +84,6 @@
     <Compile Include="Actions\DialAdjustment.cs" />
     <Compile Include="Actions\ToggleOffice.cs" />
     <Compile Include="Actions\OHState.cs" />
-    <Compile Include="Actions\CounterAdjustment.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="OpenHABApplication.cs" />
     <Compile Include="OpenHABPlugin.cs" />
