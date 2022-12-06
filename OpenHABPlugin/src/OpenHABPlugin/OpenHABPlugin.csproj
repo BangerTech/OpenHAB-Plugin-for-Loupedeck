@@ -117,6 +117,9 @@
     <EmbeddedResource Include="Resources\ButtonSwitchON.png" />
     <EmbeddedResource Include="Resources\officelight.gif" />
     <EmbeddedResource Include="Resources\pluginicon.png" />
+    <EmbeddedResource Include="Resources\pluginiconon.png" />
+    <EmbeddedResource Include="Resources\vorlage-HUD.gif" />
+    <EmbeddedResource Include="Resources\hudicon.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

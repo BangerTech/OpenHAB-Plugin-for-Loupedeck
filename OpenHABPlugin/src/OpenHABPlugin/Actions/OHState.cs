@@ -55,7 +55,7 @@ namespace Loupedeck.OpenHABPlugin.Actions
             var img = new BitmapBuilder(imageSize);
             using (var bitmapBuilder = new BitmapBuilder(imageSize))
             {
-                var fn = EmbeddedResources.FindFile("pluginicon.png");
+                var fn = EmbeddedResources.FindFile("hudicon.gif");
                 bitmapBuilder.SetBackgroundImage(EmbeddedResources.ReadImage(fn));
                 if (this.stateData[actionParameter].IsValid)
                 {
